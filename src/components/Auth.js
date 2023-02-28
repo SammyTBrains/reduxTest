@@ -7,7 +7,9 @@ import classes from "./Auth.module.css";
 const Auth = () => {
   const dispatch = useDispatch();
 
-  const loginHandler = () => {
+  const loginHandler = (event) => {
+    event.preventDefault();
+
     dispatch(authActions.login());
   };
 
