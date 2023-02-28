@@ -24,8 +24,6 @@ const Counter = () => {
     dispatch(counterActions.toggleCounter());
   };
 
-  console.log(counter);
-
   return (
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
